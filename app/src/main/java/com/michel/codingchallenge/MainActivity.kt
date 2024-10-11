@@ -14,7 +14,10 @@ import com.michel.codingchallenge.widget.Adapter
 
 class MainActivity : AppCompatActivity() {
 
-
+    /*
+    For the sake of simplicity the items have been created here but a better solution would be
+    Implementing a ViewModel that would provide the items as an StateFlow as well as handle item selection
+     */
     private val adapter by lazy {
         Adapter(
             listOf(

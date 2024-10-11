@@ -4,6 +4,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.michel.codingchallenge.model.Item
 
+/*
+In a more complex project the items wouldn't be provided in the constructor I would rather create
+a method to set the items, having it internally as an AsyncListDiffer to improve performance when the items
+update.
+ */
 class Adapter(
     private val items: List<Item>,
     private val selectCallback: (Item) -> Unit
